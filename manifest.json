@@ -3,7 +3,8 @@
   "description": "Hide spoilers on the FIFA.com World Cup 2026 highlights page",
   "version": "1.0",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
   },
   "manifest_version": 3,
   "content_scripts": [
