@@ -1,0 +1,16 @@
+{
+  "name": "UnspoilWC",
+  "description": "Hide spoilers on the FIFA.com World Cup 2026 highlights page",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/highlights/*"], 
+      "css": ["hide.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

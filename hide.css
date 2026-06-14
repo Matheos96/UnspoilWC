@@ -1,0 +1,20 @@
+/* Replace the scores with "?" */
+:is([class^="match-card_matchStatus"], [class*=" match-card_matchStatus"]) > .typography-subheading {
+    visibility: hidden;
+    position: relative;
+}
+
+:is([class^="match-card_matchStatus"], [class*=" match-card_matchStatus"]) > .typography-subheading::after {
+    content: "?";
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hide the storyteller section as it contains spoilers*/
+:is([class^="storyteller-section_sectionContainer"], [class*=" storyteller-section_sectionContainer"]) {
+    display: none !important;
+}
