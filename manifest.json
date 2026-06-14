@@ -9,7 +9,7 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/highlights/*"], 
+      "matches": ["https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/highlights/*", "https://www.fifa.com/en/cat/*"], 
       "css": ["hide.css"],
       "run_at": "document_start"
     }
